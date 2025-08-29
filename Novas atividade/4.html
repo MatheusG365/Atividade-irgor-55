@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+    <p id="texto"">Ola mundo</p>
+    <p id="texto2">Mundo Senai</p>
+    <p id="texto3">Aluno</p>
+    <button id="botao" onclick="mostrarTexto()">click</button>
+
+    <script>
+       var botao = document.getElementById("botao")
+        function mostrarTexto(){
+            var tex = document.getElementById("texto")
+            var tex2 = document.getElementById("texto2")
+            var tex3 = document.getElementById("texto3")
+            console.log(tex.innerHTML, tex2.innerHTML, tex3.innerHTML)
+        }
+        
+    </script>
+</body>
+</html>

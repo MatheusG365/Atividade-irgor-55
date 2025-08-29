@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+</head>
+<body>
+    <button onclick="trocar()" id="botao"></button>
+    <p id="hora">Hora</p>
+
+    <script>
+        var botao = document.getElementById("botao")
+        function trocar() {
+            var hora = new Date()
+            var dataFormatada = hora.toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'})
+            document.getElementById("hora").innerText = dataFormatada        }
+    </script>
+
+</body>
+</html>

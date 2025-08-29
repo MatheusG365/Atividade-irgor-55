@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <input id="escrever" type="text" placeholder="Escreva qualquer">
+    <button onclick="mostrarTexto()" id="botao" type="submit"></button>
+    <p id="mudo"></p>
+
+    <script>
+        var botao = document.getElementById("botao")
+        function mostrarTexto() {
+            var escrever = document.getElementById("escrever")
+            var mudo = document.getElementById("mudo")
+
+            mudo.innerHTML = escrever.value
+        }
+    </script>
+
+</body>
+</html>
