@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+</head>
+<body>
+
+    <main>
+        <div id="divAle" style="width: 100px; height: 100px; background-color: black;"></div>
+        <button onclick="cliqueBotao()">Clique aqui!</button>
+    </main>
+
+    <script>
+            function cliqueBotao() {
+            var cores = ["blue", "yellow", "red", "pink", "brown", "black", "white"]
+            numAleatorio = Math.floor(Math.random() * 6)
+            document.getElementById("divAle").style.backgroundColor = cores[numAleatorio]
+            }
+    </script>
+
+</body>
+</html>
+

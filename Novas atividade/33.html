@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 33</title>
+</head>
+<body>
+    <main>
+        <ul id="lista">
+            <li>Deu AAAA</li>
+            <li>Cancei</li>
+            <li>Nãoa guento mais</li>
+        </ul>
+        <button onclick="cliqueBotao()"></button>
+    </main>
+
+    <script>
+       function cliqueBotao() {
+            var lista = document.getElementById("lista");
+            if (lista.lastElementChild) {
+                lista.removeChild(lista.lastElementChild);
+            }
+        }
+    </script>
+
+</body>
+</html>

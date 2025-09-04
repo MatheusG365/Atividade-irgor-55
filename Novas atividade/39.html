@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 18</title>
+    <title>Atividade 39</title>
 </head>
 <body>
     <main>
-        <p id="textoItalico">O mundo é feito de sonhos e meu sonho é acabar isso</p>
+        
         <button onclick="cliqueBotao()"></button>
     </main>
 
     <script>
        function cliqueBotao() {
-            document.getElementById("textoItalico").style.fontStyle = "italic"
+            var largura = window.innerWidth;
+            var altura = window.innerHeight;
+            console.log("Largura da janela: " + largura + "px");
+            console.log("Altura da janela: " + altura + "px");
         }
     </script>
 
 </body>
 </html>
-

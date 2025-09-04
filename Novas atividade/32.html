@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 32</title>
+</head>
+<body>
+    <main>
+        <ul id="lista">
+            <li>Tenha piedade igor</li>
+        </ul>
+        <button onclick="cliqueBotao()"></button>
+    </main>
+
+    <script>
+    
+        function cliqueBotao() {
+            var lista = document.getElementById("lista");
+            var novoItem = document.createElement("li");
+            novoItem.textContent = "chega logo sexta " 
+            lista.appendChild(novoItem);
+        }
+    </script>

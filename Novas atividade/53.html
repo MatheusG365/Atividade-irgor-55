@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 53</title>
+</head>
+<body>
+    <main>
+        <input type="text" id="textoDigitado" placeholder="Digite algo...">
+        <button onclick="cliqueBotao()"></button>
+    </main>
+
+    <script>
+       function cliqueBotao() {
+            const texto = document.getElementById("textoDigitado").value;
+            if(texto.trim() === "") {
+                alert("Por favor, digite algo!");
+            } else {
+                alert(texto);
+            }
+        }
+    </script>
+
+</body>
+</html>
+

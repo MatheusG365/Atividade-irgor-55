@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 24</title>
+</head>
+<body>
+    <main>
+       <div id="mudarCorDiv"
+        style="width: 100px; height: 100px; background-color: gray;"
+        onmouseover="mudaACor()" onmouseout="voltaACor()"></div>
+    </main>
+
+    <script>
+       function mudaACor() {
+            document.getElementById("mudarCorDiv").style.backgroundColor = "purple"
+        }
+        function voltaACor() {
+            document.getElementById("mudarCorDiv").style.backgroundColor = "pink"
+        }
+    </script>
+
+</body>
+</html>
+

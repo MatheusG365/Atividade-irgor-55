@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExerciAtividadecio 54</title>
+</head>
+<body>
+    <main>
+    <input type="number" id="numDigitado" placeholder="Digite um número">
+    <button onclick="calcularDobro()"></button>
+    <p id="resultado"></p>
+    </main>
+
+    <script>
+    function calcularDobro() {
+        const valor = document.getElementById("numDigitado").value;
+        if (valor === "") {
+            document.getElementById("resultado").innerText = "Por favor, digite um número!";
+            return;
+        }
+        const dobro = Number(valor) * 2;
+        document.getElementById("resultado").innerText = "O dobro é: " + dobro;
+    }
+    </script>
+</body>
+</html>

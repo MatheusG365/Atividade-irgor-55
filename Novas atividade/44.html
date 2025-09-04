@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 44</title>
+</head>
+<body>
+    <main>
+        <h2 id="horaAtual">Horas no botão</h2>
+        <button onclick="mostrarHora()"></button>
+    </main>
+
+    <script>
+        function mostrarHora() {
+            const agora = new Date();
+            let horas = agora.getHours();
+            let minutos = agora.getMinutes();
+            let segundos = agora.getSeconds();
+            
+            var horaFormatada = horas + ":" + minutos + ":" + segundos;
+            document.getElementById("horaAtual").innerText = horaFormatada;
+        }
+    </script>
+</body>
+</html>

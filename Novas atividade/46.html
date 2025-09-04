@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 18</title>
+    <title>Atividade 46</title>
 </head>
 <body>
     <main>
-        <p id="textoItalico">O mundo é feito de sonhos e meu sonho é acabar isso</p>
+        <input type="text" id="textoDigitado" placeholder="Digite algo...">
         <button onclick="cliqueBotao()"></button>
+        <p id="texto"></p>
     </main>
 
     <script>
        function cliqueBotao() {
-            document.getElementById("textoItalico").style.fontStyle = "italic"
+            const texto = document.getElementById("textoDigitado").value;
+            document.getElementById("texto").innerText = texto;
         }
     </script>
 
 </body>
 </html>
-

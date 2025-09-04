@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 55</title>
+<style>
+    #minhaDiv {
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 50px auto;
+        text-align: center;
+        line-height: 150px;
+    }
+</style>
+</head>
+<body>
+<main>
+    <div id="minhaDiv">Finalmente acabou</div>
+    <div style="text-align:center;">
+        <button onclick="cliqueBotao()"></button>
+    </div>
+</main>
+
+<script>
+    function cliqueBotao() {
+        document.getElementById("minhaDiv").style.borderColor = "red";
+    }
+</script>
+</body>
+</html>

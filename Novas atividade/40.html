@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 40</title>
+</head>
+<body>
+    <main>
+        <p>DDDDDDDDDDD</p>
+        <p>CCCCCC</p>
+        <p>BBBBBBBB</p>
+        <button onclick="cliqueBotao()"></button>
+    </main>
+
+    <script>
+        function cliqueBotao() {
+            var paragrafos = document.getElementsByTagName("p");
+            for (var i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].innerText = "Alterado!";
+            }
+        }
+    </script>
+</body>
+</html>

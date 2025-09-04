@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 18</title>
+    <title>Atividade 45</title>
 </head>
 <body>
     <main>
-        <p id="textoItalico">O mundo é feito de sonhos e meu sonho é acabar isso</p>
+        <p>Clicks: <span id="contadorClicks">0</span></p>
         <button onclick="cliqueBotao()"></button>
     </main>
 
     <script>
-       function cliqueBotao() {
-            document.getElementById("textoItalico").style.fontStyle = "italic"
+       var contador = 0;
+
+        function cliqueBotao() {
+            contador++;
+            document.getElementById("contadorClicks").innerText = contador;
         }
     </script>
 

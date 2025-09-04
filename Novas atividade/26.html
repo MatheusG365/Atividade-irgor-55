@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 26</title>
+</head>
+<body>
+    <main>
+        <p id="textinho" contenteditable="true" 
+           onfocus="pintarFundo()" 
+           onblur="voltarBranco()">
+           Chega!!!
+        </p>
+    </main>
+
+    <script>
+        function pintarFundo() {
+            document.getElementById("textinho").style.backgroundColor = "yellow"
+        }
+        function voltarBranco() {
+            document.getElementById("textinho").style.backgroundColor = "white"
+        }
+    </script>
+</body>
+</html>
+

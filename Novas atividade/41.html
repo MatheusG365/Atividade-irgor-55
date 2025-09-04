@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 41</title>
+</head>
+<body>
+      <style>
+        #semaforo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .vermelho { background-color: red; }
+        .amarelo { background-color: yellow; }
+        .verde { background-color: green; }
+    </style>
+    <main>
+        <div id="semaforo"></div>
+        <div style="text-align: center;">
+             <button onclick="mudarCor('vermelho')">Vermelho</button>
+            <button onclick="mudarCor('amarelo')">Amarelo</button>
+            <button onclick="mudarCor('verde')">Verde</button>
+        </div>
+        
+    </main>
+
+    <script>
+       function mudarCor(cor) {
+            const semaforo = document.getElementById("semaforo");
+            if (cor === "vermelho") semaforo.style.backgroundColor = "red";
+            else if (cor === "amarelo") semaforo.style.backgroundColor = "yellow";
+            else if (cor === "verde") semaforo.style.backgroundColor = "green";
+        }
+    </script>
+
+</body>
+</html>
+
