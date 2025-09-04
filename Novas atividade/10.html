@@ -7,14 +7,15 @@
 </head>
 <body>
     <main>
-       <p id="Branco">Cor?</p>
-    <p id="Preto"></p>
+        <p id="Branco">Cor?</p>
+        <p id="Preto">Oi</p>
         <button onclick="cliqueBotao()"></button>
     </main>
 
     <script>
        function cliqueBotao() {
-            document.getElementById("lista").innerHTML = "To com fome"
+            var id =  document.getElementById("Branco").id
+            alert(id)
 
         }
     </script>
@@ -22,3 +23,6 @@
 </body>
 </html>
 
+<!-- Faça um botão que mostre o ID de um elemento ao clicar nele. -->
+
+<!-- fiz um função que tem uma variavel que captura o id de algum local selecionado em seguida mostrado em um alert -->

@@ -7,22 +7,24 @@
 </head>
 <body>
     <main>
-        <ul id="lista">
+        <ul>
             <li>Deu AAAA</li>
             <li>Cancei</li>
-            <li>Nãoa guento mais</li>
+            <li id="ult" >Não a guento mais</li>
         </ul>
         <button onclick="cliqueBotao()"></button>
     </main>
 
     <script>
        function cliqueBotao() {
-            var lista = document.getElementById("lista");
-            if (lista.lastElementChild) {
-                lista.removeChild(lista.lastElementChild);
-            }
+            document.getElementById('ult').style.display = "none"
+            
         }
     </script>
 
 </body>
 </html>
+
+<!-- Crie um botão que remova o último item da lista. -->
+
+<!-- Coloquei um id na ultima linha e dou um diplay none nela para sumir -->
